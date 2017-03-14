@@ -1,26 +1,28 @@
 source 'https://rubygems.org'
 
 # ruby
-ruby '2.1.2'
+ruby '2.3.3'
 
 # Rails
-gem 'rails', '4.1.9'
+gem 'rails', '~> 4.2'
 
 # Database
 gem 'pg'
-gem 'sucker_punch', '~> 1.0'
+gem 'sucker_punch'
 
 # Model
 gem 'acts_as_commentable'
-gem 'acts-as-taggable-on', '~> 3.4'
+gem 'acts-as-taggable-on'
 
 # Login
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'omniauth'
+gem 'omniauth-oauth2'
 
 # Assets pipeline
-gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'jquery-rails'
 gem 'slim-rails'
 gem 'bootstrap-sass'
@@ -43,6 +45,7 @@ gem 'nokogiri'
 
 # scraping meetup events
 gem 'icalendar'
+gem 'recaptcha', require: 'recaptcha/rails'
 
 group :development do
   gem 'better_errors'
@@ -52,7 +55,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'faker'
 end
