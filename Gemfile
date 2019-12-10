@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # ruby
-ruby '2.3.3'
+ruby '2.6.5'
 
 # Rails
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.2.4'
 
 # Database
 gem 'pg'
